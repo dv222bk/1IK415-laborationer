@@ -1,4 +1,4 @@
--1IK415_dv222bk
+1IK415-laborationer
 ===============
 
-Webbteknisk Information (1IK415) Linnéuniversitetet 
+Laborationer för kursen Webbteknisk Information (1IK415) på Linnéuniversitetet gjorda av Daniel Vedin
