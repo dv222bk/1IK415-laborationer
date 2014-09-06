@@ -5,9 +5,34 @@
         <title>Daniel Vedins Webbtekniska Sajt - Laborationer</title>
     <body>
         <header>
+            <p><img src="../pics/logotype.png" alt="Logotype" /></p>
             <h1>Kontakt</h1>
             <p class="tagline">Kontakta mig när du vill!</p>
         </header>
+        <section>
+            <h2>Kontaktformulär</h2>
+            <p>Obeservera! Detta är bara ett påhittat kontaktformulär!</p>
+            <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                <fieldset>
+                    <legend>Fråga</legend>
+                    Ärendetype
+                    <select name="arende">
+                        <option value="Fraga">Fråga</option>
+                        <option value="Klagomal">Klagomål</option>
+                        <option value="Ovrigt">Övrigt</option>
+                    </select>
+                    <br />
+                    Rubrik: <input name="rubrik" type="text" /><br />
+                    Fråga: <textarea name="msg"></textarea><br />
+                </fieldset>
+                <fieldset>
+                    <legend>Information om dig</legend>
+                    Kontakta mig via mail <input name="mejl" type="checkbox" value="mejl" /><br />
+                    Kontakta mig via telefon <input name="tfn" type="checkbox" value="mejl" />
+                </fieldset>
+                <button type="submit">Skicka frågan</button>
+            </form>
+        </section>
         <nav class="main">
             <ul>
                 <li><a title="Startsida" href="../index.html">Start</a></li>
