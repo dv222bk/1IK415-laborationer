@@ -58,7 +58,21 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+h1 {
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+}
 header {
     float: left;
     clear: both;
@@ -76,6 +90,10 @@ article, section, aside, nav.labs, nav.courses {
     width: 70%;
     margin-bottom: 0.5em;
 }
+article.bloggpost {
+    padding-top: 0.5em;
+    border-top: 0.1em solid black;
+}
 video {
     width: 100%;
 }
@@ -88,4 +106,16 @@ footer {
     float: right;
     width: 100%;
     margin-top: 0.5em;
+}
+p {
+    padding: 0.5em;
+}
+.authorInfo {
+    margin-top: 0.5em;
+    border-top: 0.1em dotted black;
+}
+.tagline {
+    font-size: 1.2em;
+    padding: 0;
+    text-align: right;
 }
