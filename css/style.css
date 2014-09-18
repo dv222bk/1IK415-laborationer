@@ -53,7 +53,15 @@ table {
 /*     START OF CSS CHANGES     */
 
 body {
-    width: 47em;
+    background-color: #6D3D7D; /* Fallback */
+    background: repeating-linear-gradient( /* http://css-tricks.com/stripes-css/ */
+        -35deg,
+        #6D3D7D,
+        #6D3D7D 2em,
+        #BA8BCA 2em,
+        #BA8BCA 4em
+    );
+    width: 46.8em;
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -62,16 +70,19 @@ h1 {
     font-size: 1.6em;
     font-weight: bolder;
     margin-bottom: 0.5em;
+    padding: 0.2em;
 }
 h2 {
     font-size: 1.4em;
     font-weight: bolder;
     margin-bottom: 0.5em;
+    padding: 0.2em;
 }
 h3 {
     font-size: 1.2em;
     font-weight: bolder;
     margin-bottom: 0.5em;
+    padding: 0.2em;
 }
 header {
     float: left;
@@ -79,15 +90,18 @@ header {
     margin: 0 auto;
     width: 100%;
     height: auto;
-    padding-top: 8em;
-    margin-bottom: 1em;
-    background-image: url(pics/logotype.png);
-    background-position: top left;
-    background-repeat: no-repeat;
+    padding-top: 7.5em;
+    background: #B6CA8B url(pics/logotype.png) top left no-repeat;
+}
+main {
+    float: right;
+    width: 100%;
+    background-color: #EEFFC9;
 }
 article, section, aside, nav.labs, nav.courses {
     float: right;
-    width: 70%;
+    width: 68%;
+    margin-right: 2%;
     margin-bottom: 0.5em;
 }
 article.bloggpost {
@@ -98,17 +112,27 @@ video {
     width: 100%;
 }
 nav.mainNav {
-    width: 30%;
+    width: 28%;
     height: 100%;
     margin-right: 1em;
+    margin-left: 2%;
 }
 footer {
+    background-color: #B6CA8B;
     float: right;
     width: 100%;
-    margin-top: 0.5em;
 }
 p {
     padding: 0.5em;
+}
+a {
+    color: #5F6E40;
+}
+a:visited {
+    color: #6D3D7D;
+}
+a:hover, a:focus {
+    color: #BA8BCA;
 }
 .authorInfo {
     margin-top: 0.5em;
@@ -116,6 +140,5 @@ p {
 }
 .tagline {
     font-size: 1.2em;
-    padding: 0;
     text-align: right;
 }
