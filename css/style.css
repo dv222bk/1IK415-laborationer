@@ -64,7 +64,7 @@ body {
     width: 46.8em;
     font-family: Verdana, Geneva, sans-serif;
     line-height: 1.3em;
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -112,11 +112,11 @@ article, section, aside, nav.labs, nav.courses {
     margin-right: 2%;
     margin-bottom: 0.5em;
 }
-article.bloggpost {
+.bloggpost {
     padding-top: 0.5em;
     border-top: 0.1em solid black;
 }
-video {
+video, table {
     width: 100%;
     box-shadow: 4px 4px 7px #333333;
 }
@@ -138,7 +138,7 @@ nav.mainNav li{
 nav.mainNav li:hover {
     background-color: #5F6E40;
 }
-nav.mainNav li.active {
+nav.mainNav .active {
     font-weight: bolder;
 }
 nav.mainNav a{
@@ -154,6 +154,24 @@ nav.mainNav a{
     height: 1em;
     text-decoration: none;
 }
+nav.courses ul {
+    margin-top: 1em;
+    list-style: disc inside;
+}
+nav.courses li {
+    margin-bottom: 0.5em;
+}
+nav.labs {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav.labs li:not(:last-child):after {
+    content: ",";
+}
+nav.labs li {
+    display: inline;
+}
 footer {
     background-color: #B6CA8B;
     float: right;
@@ -163,7 +181,7 @@ table, td, th {
     border: 0.1em solid black;
 }
 table {
-    width: 100%;
+    margin: 1em 0;
 }
 [rowspan] {
     text-align: center;
@@ -173,10 +191,30 @@ table {
 thead, tfoot, tr:nth-child(even) {
     background-color: #B6CA8B;
 }
-p {
-    padding: 0 0.5em 0.5em 0;
+p, dt {
+    margin-bottom: 0.5em;
 }
-img {
+ol {
+    list-style: decimal inside;
+    margin-bottom: 0.5em;
+}
+ul {
+    margin-bottom: 1em;
+}
+li > ol {
+    margin-left: 1em;
+}
+dt {
+    font-weight: bold;
+}
+.question:before {
+    content: "?> ";
+}
+dd {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+img, li > dl {
     margin: 1em;
 }
 a {
@@ -188,7 +226,12 @@ a:visited {
 a:hover, a:focus {
     color: #BA8BCA;
 }
+.bloggpost {
+    padding-top: 0.5em;
+    border-top: 0.1em solid black;
+}
 .authorInfo {
+    text-align: right;
     margin-top: 0.5em;
     border-top: 0.1em dotted black;
 }
