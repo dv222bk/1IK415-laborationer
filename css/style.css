@@ -62,12 +62,17 @@ body {
         #BA8BCA 4em
     );
     width: 46.8em;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.3em;
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
 }
 header, main, footer {
     box-shadow: 5px 5px 10px #333333;
+}
+h1, h2, h3 {
+    font-family: Georgia, serif;
 }
 h1 {
     font-size: 1.6em;
@@ -78,7 +83,7 @@ h1 {
 h2 {
     font-size: 1.4em;
     font-weight: bolder;
-    margin-top: 0.2em;
+    margin-top: 0.7em;
     margin-bottom: 0.5em;
 }
 h3 {
@@ -118,6 +123,7 @@ video {
 nav.mainNav {
     width: 28%;
     height: 100%;
+    font-family: "Times New Roman", Times, serif;
     margin-left: 1%;
     margin-top: 1%;
 }
@@ -153,8 +159,25 @@ footer {
     float: right;
     width: 100%;
 }
+table, td, th {
+    border: 0.1em solid black;
+}
+table {
+    width: 100%;
+}
+[rowspan] {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #EEFFC9;
+}
+thead, tfoot, tr:nth-child(even) {
+    background-color: #B6CA8B;
+}
 p {
-    padding: 0.5em;
+    padding: 0 0.5em 0.5em 0;
+}
+img {
+    margin: 1em;
 }
 a {
     color: #5F6E40;
@@ -172,4 +195,10 @@ a:hover, a:focus {
 .tagline {
     font-size: 1.2em;
     text-align: right;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
 }
