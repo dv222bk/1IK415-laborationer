@@ -52,6 +52,17 @@ table {
 
 /*     START OF CSS CHANGES     */
 
+/*
+    Background: #6D3D7D and #BA8BCA
+    Background Header, Footer, Menu: #B6CA8B
+    Background Main, Menu Hover Text: #EEFFC9
+    Hover Background Menu, Link: #5F6E40 
+    Link Visited: #6D3D7D
+    Link Hover/Focus: #BA8BCA
+    Box-Shadow: #333333
+    Text: #FFFFFF
+*/
+
 body {
     background-color: #6D3D7D; /* Fallback */
     background: repeating-linear-gradient( /* http://css-tricks.com/stripes-css/ */
@@ -112,10 +123,6 @@ article, section, aside, nav.labs, nav.courses {
     margin-right: 2%;
     margin-bottom: 0.5em;
 }
-.bloggpost {
-    padding-top: 0.5em;
-    border-top: 0.1em solid black;
-}
 video, table {
     width: 100%;
     box-shadow: 4px 4px 7px #333333;
@@ -135,7 +142,8 @@ nav.mainNav li{
     background-color: #B6CA8B;
     box-shadow: 2px 2px 2px #333333;
 }
-nav.mainNav li:hover {
+nav.mainNav li:hover a {
+    color: #EEFFC9;
     background-color: #5F6E40;
 }
 nav.mainNav .active {
@@ -177,16 +185,14 @@ footer {
     float: right;
     width: 100%;
 }
+footer p {
+    margin: 0.25em 0 0.5em 0.5em;
+}
 table, td, th {
     border: 0.1em solid black;
 }
 table {
     margin: 1em 0;
-}
-[rowspan] {
-    text-align: center;
-    vertical-align: middle;
-    background-color: #EEFFC9;
 }
 thead, tfoot, tr:nth-child(even) {
     background-color: #B6CA8B;
@@ -207,9 +213,6 @@ li > ol {
 dt {
     font-weight: bold;
 }
-.question:before {
-    content: "?> ";
-}
 dd {
     margin-left: 1em;
     margin-bottom: 1em;
@@ -226,22 +229,42 @@ a:visited {
 a:hover, a:focus {
     color: #BA8BCA;
 }
+.question:before {
+    content: "?> ";
+}
 .bloggpost {
     padding-top: 0.5em;
     border-top: 0.1em solid black;
 }
+.bloggpost h3 {
+    background-image: url(pics/fairy.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
 .authorInfo {
     text-align: right;
+    font-style: italic;
+    font-size: 0.8em;
     margin-top: 0.5em;
     border-top: 0.1em dotted black;
 }
 .tagline {
     font-size: 1.2em;
     text-align: right;
+    margin-right: 0.25em;
 }
 .right {
     float: right;
 }
 .left {
     float: left;
+    margin-left: 0;
+}
+.shadow {
+    box-shadow: 4px 4px 7px #333333;
+}
+[rowspan] {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #EEFFC9;
 }
