@@ -1,0 +1,47 @@
+@media print {
+    * {
+        background: white !important;
+    }
+    header, footer, main, table, fieldset, input, textarea, select, legend, .shadow {
+        box-shadow: none;
+    }
+    article, section, aside {
+        float: left;
+        width: 100%;
+    }
+    header {
+        margin: 0;
+        padding: 0;
+    }
+    nav, video, button, .tagline {
+        display: none;
+    }
+    fieldset {
+        margin-bottom: 1em;
+    }
+    footer {
+        border-top: 0.1em solid #000000;
+    }
+    option {
+        display: none;
+    }
+    dl {
+        width: 75%;
+    }
+    table, fieldset, input:not([type=checkbox]), textarea, select {
+        width: 75%;
+        border: 0.1em solid black;
+    }
+    a:after {
+        content:" (" attr(href) ") ";
+    }
+    a, a:focus, a:hover, a:visited {
+        color: blue;
+    }
+    .bloggpost h3 {
+        padding: 0;
+    }
+    .authorInfo {
+        margin-right: 1em;
+    }
+}

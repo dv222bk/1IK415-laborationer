@@ -261,6 +261,9 @@ legend {
 fieldset, button, input, textarea, select, legend {
     box-shadow: 2px 2px 2px #333333;
 }
+textarea {
+    height: 10em;
+}
 input:not([type=checkbox]), textarea, select {
     display: block;
     width: 100%;
