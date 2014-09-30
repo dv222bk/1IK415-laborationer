@@ -139,12 +139,10 @@ nav.mainNav li{
     height: 2em;
     margin-bottom: 0.5em;
     border-radius: 0.5em;
-    background-color: #B6CA8B;
     box-shadow: 2px 2px 2px #333333;
 }
 nav.mainNav li:hover a {
     color: #EEFFC9;
-    background-color: #5F6E40;
 }
 nav.mainNav .active {
     font-weight: bolder;
@@ -157,7 +155,7 @@ nav.mainNav a{
     font-size: 1.2em;
     color: #000000;
     font-variant: small-caps;
-    padding: 0.4em;
+    padding: 0.4em 0.4em 0.4em 2em;
     width: 100%;
     height: 1em;
     text-decoration: none;
@@ -314,6 +312,30 @@ input:focus, textarea:focus, select:focus {
 }
 .shadow {
     box-shadow: 4px 4px 7px #333333;
+}
+.start {
+    background: #B6CA8B url(pics/sprite.png) 5px -43px no-repeat;
+}
+.start:hover a {
+    background: #5F6E40 url(pics/sprite.png) 5px 5px no-repeat;
+}
+.laborationer {
+    background: #B6CA8B url(pics/sprite.png) 5px -139px no-repeat;
+}
+.laborationer:hover a {
+    background: #5F6E40 url(pics/sprite.png) 5px -91px no-repeat;
+}
+.presentation {
+    background: #B6CA8B url(pics/sprite.png) 5px -235px no-repeat;
+}
+.presentation:hover a {
+    background: #5F6E40 url(pics/sprite.png) 5px -187px no-repeat;
+}
+.kontakt {
+    background: #B6CA8B url(pics/sprite.png) 5px -331px no-repeat;
+}
+.kontakt:hover a {
+    background: #5F6E40 url(pics/sprite.png) 5px -283px no-repeat;
 }
 [rowspan] {
     text-align: center;
