@@ -313,29 +313,39 @@ input:focus, textarea:focus, select:focus {
 .shadow {
     box-shadow: 4px 4px 7px #333333;
 }
+.start, .laborationer, .presentation, .kontakt {
+    background-color: #B6CA8B;
+    background-image: url(pics/sprite.png);
+    background-repeat: no-repeat;
+}
+.start:hover a, .laborationer:hover a, .presentation:hover a, .kontakt:hover a {
+    background-color: #5F6E40;
+    background-image: url(pics/sprite.png);
+    background-repeat: no-repeat;
+}
 .start {
-    background: #B6CA8B url(pics/sprite.png) 5px -43px no-repeat;
+    background-position: 5px -43px;
 }
 .start:hover a {
-    background: #5F6E40 url(pics/sprite.png) 5px 5px no-repeat;
+    background-position: 5px 5px;
 }
 .laborationer {
-    background: #B6CA8B url(pics/sprite.png) 5px -139px no-repeat;
+    background-position: 5px -139px;
 }
 .laborationer:hover a {
-    background: #5F6E40 url(pics/sprite.png) 5px -91px no-repeat;
+    background-position: 5px -91px;
 }
 .presentation {
-    background: #B6CA8B url(pics/sprite.png) 5px -235px no-repeat;
+    background-position: 5px -235px;
 }
 .presentation:hover a {
-    background: #5F6E40 url(pics/sprite.png) 5px -187px no-repeat;
+    background-position: 5px -187px;
 }
 .kontakt {
-    background: #B6CA8B url(pics/sprite.png) 5px -331px no-repeat;
+    background-position: 5px -331px;
 }
 .kontakt:hover a {
-    background: #5F6E40 url(pics/sprite.png) 5px -283px no-repeat;
+    background-position: 5px -283px;
 }
 [rowspan] {
     text-align: center;
