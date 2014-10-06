@@ -120,7 +120,7 @@ nav.mainNav li:hover a {
 nav.mainNav .active {
     font-weight: bolder;
 }
-nav.mainNav a{
+nav.mainNav a {
     display: block;
     position: relative;
     top: 0;
@@ -132,6 +132,71 @@ nav.mainNav a{
     width: 100%;
     height: 3em;
     text-decoration: none;
+}
+nav.courses ul {
+    margin-top: 1em;
+}
+nav.courses li {
+    margin-bottom: 0.5em;
+}
+nav.labs {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav.labs li:not(:last-child):after {
+    content: ",";
+}
+nav.labs li {
+    display: inline;
+}
+footer {
+    background-color: #B6CA8B;
+    width: 100%;
+}
+footer p {
+    margin: 0.25em 0 0.5em 0.5em;
+}
+table, td, th {
+    border: 0.1em solid black;
+}
+table {
+    margin: 1em 0;
+}
+thead, tfoot, tr:nth-child(even) {
+    background-color: #B6CA8B;
+}
+p, dt {
+    margin-bottom: 0.5em;
+}
+ol {
+    list-style: decimal inside;
+    margin-bottom: 0.5em;
+}
+ul {
+    margin-bottom: 1em;
+}
+li > ol {
+    margin-left: 1em;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+img, li > dl {
+    margin: 1em;
+}
+a {
+    color: #5F6E40;
+}
+a:visited {
+    color: #6D3D7D;
+}
+a:hover, a:focus {
+    color: #BA8BCA;
 }
 .start, .laborationer, .presentation, .kontakt {
     background-color: #B6CA8B;
@@ -216,77 +281,21 @@ nav.mainNav a{
         border-radius: 0.5em;
         box-shadow: 2px 2px 2px #333333;
     }
-    nav.mainNav a{
+    nav.mainNav a {
         font-size: 1.2em;
         padding: 0.4em 0.4em 0.4em 2em;
         height: 1em;
     }
     nav.courses ul {
-        margin-top: 1em;
         list-style: disc inside;
-    }
-    nav.courses li {
-        margin-bottom: 0.5em;
     }
     nav.labs {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    nav.labs li:not(:last-child):after {
-        content: ",";
-    }
-    nav.labs li {
-        display: inline;
-    }
     footer {
-        background-color: #B6CA8B;
         float: right;
-        width: 100%;
-    }
-    footer p {
-        margin: 0.25em 0 0.5em 0.5em;
-    }
-    table, td, th {
-        border: 0.1em solid black;
-    }
-    table {
-        margin: 1em 0;
-    }
-    thead, tfoot, tr:nth-child(even) {
-        background-color: #B6CA8B;
-    }
-    p, dt {
-        margin-bottom: 0.5em;
-    }
-    ol {
-        list-style: decimal inside;
-        margin-bottom: 0.5em;
-    }
-    ul {
-        margin-bottom: 1em;
-    }
-    li > ol {
-        margin-left: 1em;
-    }
-    dt {
-        font-weight: bold;
-    }
-    dd {
-        margin-left: 1em;
-        margin-bottom: 1em;
-    }
-    img, li > dl {
-        margin: 1em;
-    }
-    a {
-        color: #5F6E40;
-    }
-    a:visited {
-        color: #6D3D7D;
-    }
-    a:hover, a:focus {
-        color: #BA8BCA;
     }
     fieldset {
         border: 0.2em solid #5F6E40;
