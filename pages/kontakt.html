@@ -20,17 +20,19 @@
                         <legend>Meddelande</legend>
                         <lable for="arende">Ärendetyp:</lable>
                         <select name="arende">
-                            <option value="Fraga">Fråga</option>
-                            <option value="Klagomal">Klagomål</option>
-                            <option value="Ovrigt">Övrigt</option>
+                            <option value="fraga">Fråga</option>
+                            <option value="klagomal">Klagomål</option>
+                            <option value="ovrigt">Övrigt</option>
                         </select>
                         <lable for="rubrik">Rubrik:</lable><input name="rubrik" type="text" />
                         <lable for="msg">Fråga:</lable><textarea name="msg"></textarea>
                     </fieldset>
                     <fieldset>
                         <legend>Information om dig</legend>
-                        <lable for="mejl">Kontakta mig via mail</lable><input name="mejl" type="checkbox" value="mejl" />
-                        <lable for="tfn">Kontakta mig via telefon</lable><input name="tfn" type="checkbox" value="mejl" />
+                        <lable for="mejl">Email:</lable><input name="mejl" type="email" />
+                        <lable for="tfn">Telefon:</lable><input name="tfn" type="tel" />
+                        <lable for="contactmejl">Kontakta mig via mail</lable><input name="contactmejl" type="checkbox" value="mejl" />
+                        <lable for="contacttfn">Kontakta mig via telefon</lable><input name="contacttfn" type="checkbox" value="tfn" />
                     </fieldset>
                     <button type="submit">Skicka frågan</button>
                 </form>
