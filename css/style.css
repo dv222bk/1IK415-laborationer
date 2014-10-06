@@ -64,23 +64,9 @@ table {
 */
 
 body {
-    background-color: #6D3D7D; /* Fallback */
-    background: repeating-linear-gradient( /* http://css-tricks.com/stripes-css/ */
-        -35deg,
-        #6D3D7D,
-        #6D3D7D 2em,
-        #BA8BCA 2em,
-        #BA8BCA 4em
-    );
-    width: 46.8em;
-    font-family: Verdana, Geneva, sans-serif;
+    width: 100%;
     line-height: 1.3em;
-    margin-top: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-}
-header, main, footer {
-    box-shadow: 5px 5px 10px #333333;
+    font-family: Verdana, Geneva, sans-serif;
 }
 h1, h2, h3 {
     font-family: Georgia, serif;
@@ -103,24 +89,16 @@ h3 {
     margin-bottom: 0.5em;
 }
 header {
-    float: left;
-    clear: both;
-    margin: 0 auto;
     width: 100%;
-    height: auto;
     padding-top: 7.5em;
-    background: #B6CA8B url(pics/logotype.png) top left no-repeat;
+    background: #B6CA8B url(pics/logotype_small.png) top center no-repeat;
 }
 main {
-    float: right;
     width: 100%;
     background-color: #EEFFC9;
 }
 article, section, aside, nav.labs, nav.courses {
-    float: right;
-    width: 66%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 100%;
     margin-bottom: 0.5em;
 }
 video, table {
@@ -128,18 +106,13 @@ video, table {
     box-shadow: 4px 4px 7px #333333;
 }
 nav.mainNav {
-    width: 28%;
+    width: 100%;
     height: 100%;
     font-family: "Times New Roman", Times, serif;
-    margin-left: 1%;
-    margin-top: 1%;
 }
 nav.mainNav li{
     overflow: hidden;
-    height: 2em;
-    margin-bottom: 0.5em;
-    border-radius: 0.5em;
-    box-shadow: 2px 2px 2px #333333;
+    height: 3em;
 }
 nav.mainNav li:hover a {
     color: #EEFFC9;
@@ -157,161 +130,8 @@ nav.mainNav a{
     font-variant: small-caps;
     padding: 0.4em 0.4em 0.4em 2em;
     width: 100%;
-    height: 1em;
+    height: 3em;
     text-decoration: none;
-}
-nav.courses ul {
-    margin-top: 1em;
-    list-style: disc inside;
-}
-nav.courses li {
-    margin-bottom: 0.5em;
-}
-nav.labs {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-nav.labs li:not(:last-child):after {
-    content: ",";
-}
-nav.labs li {
-    display: inline;
-}
-footer {
-    background-color: #B6CA8B;
-    float: right;
-    width: 100%;
-}
-footer p {
-    margin: 0.25em 0 0.5em 0.5em;
-}
-table, td, th {
-    border: 0.1em solid black;
-}
-table {
-    margin: 1em 0;
-}
-thead, tfoot, tr:nth-child(even) {
-    background-color: #B6CA8B;
-}
-p, dt {
-    margin-bottom: 0.5em;
-}
-ol {
-    list-style: decimal inside;
-    margin-bottom: 0.5em;
-}
-ul {
-    margin-bottom: 1em;
-}
-li > ol {
-    margin-left: 1em;
-}
-dt {
-    font-weight: bold;
-}
-dd {
-    margin-left: 1em;
-    margin-bottom: 1em;
-}
-img, li > dl {
-    margin: 1em;
-}
-a {
-    color: #5F6E40;
-}
-a:visited {
-    color: #6D3D7D;
-}
-a:hover, a:focus {
-    color: #BA8BCA;
-}
-fieldset {
-    border: 0.2em solid #5F6E40;
-    border-radius: 0.5em;
-    padding: 0.5em 2em 0.5em 0.5em;
-}
-fieldset, button {
-    margin-top: 1em;
-}
-button {
-    width: 100%;
-    background-color: #B6CA8B;
-    border-radius: 0.5em;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 1.2em;
-}
-button:focus, button:hover {
-    color: #EEFFC9;
-    background-color: #5F6E40;
-}
-legend {
-    background-color: #B6CA8B;
-    border: 0.2em solid #5F6E40;
-    border-radius: 0.5em;
-    margin: 0.25em;
-    padding: 0.25em;
-}
-fieldset, button, input, textarea, select, legend {
-    box-shadow: 2px 2px 2px #333333;
-}
-textarea {
-    height: 10em;
-}
-input:not([type=checkbox]), textarea, select {
-    display: block;
-    width: 100%;
-    background-color: #B6CA8B;
-    border: 0.3em solid #5F6E40;
-    border-radius: 0.5em;
-    margin-bottom: 1em;
-    padding: 0.4em;
-}
-input:focus, textarea:focus, select:focus {
-    background-color: #EEFFC9;
-}
-.question:before {
-    content: "?> ";
-}
-.bloggpost {
-    padding-top: 0.5em;
-    border-top: 0.1em solid black;
-}
-.bloggpost h3 {
-    background-image: url(pics/fairy.png);
-    background-repeat: no-repeat;
-    padding-left: 25px;
-}
-.authorInfo {
-    text-align: right;
-    font-style: italic;
-    font-size: 0.8em;
-    margin-top: 0.5em;
-    border-top: 0.1em dotted black;
-}
-.tagline {
-    font-size: 1.2em;
-    text-align: right;
-    margin-right: 0.25em;
-}
-.right {
-    float: right;
-}
-.left {
-    float: left;
-    margin-left: 0;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.shadow {
-    box-shadow: 4px 4px 7px #333333;
 }
 .start, .laborationer, .presentation, .kontakt {
     background-color: #B6CA8B;
@@ -347,8 +167,216 @@ input:focus, textarea:focus, select:focus {
 .kontakt:hover a {
     background-position: 5px -283px;
 }
-[rowspan] {
-    text-align: center;
-    vertical-align: middle;
-    background-color: #EEFFC9;
+
+@media all and (min-width: 481px) {
+    body {
+        background-color: #6D3D7D; /* Fallback */
+        background: repeating-linear-gradient( /* http://css-tricks.com/stripes-css/ */
+            -35deg,
+            #6D3D7D,
+            #6D3D7D 2em,
+            #BA8BCA 2em,
+            #BA8BCA 4em
+        );
+        width: 46.8em;
+        margin-top: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header, main, footer {
+        box-shadow: 5px 5px 10px #333333;
+    }
+    header {
+        float: left;
+        clear: both;
+        margin: 0 auto;
+        padding-top: 7.5em;
+        background: #B6CA8B url(pics/logotype.png) top left no-repeat;
+    }
+    main {
+        float: right;
+    }
+    video, table {
+        width: 100%;
+    }
+    article, section, aside, nav.labs, nav.courses {
+        float: right;
+        width: 66%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    nav.mainNav {
+        width: 28%;
+        margin-left: 1%;
+        margin-top: 1%;
+    }
+    nav.mainNav li {
+        height: 2em;
+        margin-bottom: 0.5em;
+        border-radius: 0.5em;
+        box-shadow: 2px 2px 2px #333333;
+    }
+    nav.mainNav a{
+        font-size: 1.2em;
+        padding: 0.4em 0.4em 0.4em 2em;
+        height: 1em;
+    }
+    nav.courses ul {
+        margin-top: 1em;
+        list-style: disc inside;
+    }
+    nav.courses li {
+        margin-bottom: 0.5em;
+    }
+    nav.labs {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav.labs li:not(:last-child):after {
+        content: ",";
+    }
+    nav.labs li {
+        display: inline;
+    }
+    footer {
+        background-color: #B6CA8B;
+        float: right;
+        width: 100%;
+    }
+    footer p {
+        margin: 0.25em 0 0.5em 0.5em;
+    }
+    table, td, th {
+        border: 0.1em solid black;
+    }
+    table {
+        margin: 1em 0;
+    }
+    thead, tfoot, tr:nth-child(even) {
+        background-color: #B6CA8B;
+    }
+    p, dt {
+        margin-bottom: 0.5em;
+    }
+    ol {
+        list-style: decimal inside;
+        margin-bottom: 0.5em;
+    }
+    ul {
+        margin-bottom: 1em;
+    }
+    li > ol {
+        margin-left: 1em;
+    }
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    img, li > dl {
+        margin: 1em;
+    }
+    a {
+        color: #5F6E40;
+    }
+    a:visited {
+        color: #6D3D7D;
+    }
+    a:hover, a:focus {
+        color: #BA8BCA;
+    }
+    fieldset {
+        border: 0.2em solid #5F6E40;
+        border-radius: 0.5em;
+        padding: 0.5em 2em 0.5em 0.5em;
+    }
+    fieldset, button {
+        margin-top: 1em;
+    }
+    button {
+        width: 100%;
+        background-color: #B6CA8B;
+        border-radius: 0.5em;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+    button:focus, button:hover {
+        color: #EEFFC9;
+        background-color: #5F6E40;
+    }
+    legend {
+        background-color: #B6CA8B;
+        border: 0.2em solid #5F6E40;
+        border-radius: 0.5em;
+        margin: 0.25em;
+        padding: 0.25em;
+    }
+    fieldset, button, input, textarea, select, legend {
+        box-shadow: 2px 2px 2px #333333;
+    }
+    textarea {
+        height: 10em;
+    }
+    input:not([type=checkbox]), textarea, select {
+        display: block;
+        width: 100%;
+        background-color: #B6CA8B;
+        border: 0.3em solid #5F6E40;
+        border-radius: 0.5em;
+        margin-bottom: 1em;
+        padding: 0.4em;
+    }
+    input:focus, textarea:focus, select:focus {
+        background-color: #EEFFC9;
+    }
+    .question:before {
+        content: "?> ";
+    }
+    .bloggpost {
+        padding-top: 0.5em;
+        border-top: 0.1em solid black;
+    }
+    .bloggpost h3 {
+        background-image: url(pics/fairy.png);
+        background-repeat: no-repeat;
+        padding-left: 25px;
+    }
+    .authorInfo {
+        text-align: right;
+        font-style: italic;
+        font-size: 0.8em;
+        margin-top: 0.5em;
+        border-top: 0.1em dotted black;
+    }
+    .tagline {
+        font-size: 1.2em;
+        text-align: right;
+        margin-right: 0.25em;
+    }
+    .right {
+        float: right;
+    }
+    .left {
+        float: left;
+        margin-left: 0;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .shadow {
+        box-shadow: 4px 4px 7px #333333;
+    }
+    [rowspan] {
+        text-align: center;
+        vertical-align: middle;
+        background-color: #EEFFC9;
+    }
 }
