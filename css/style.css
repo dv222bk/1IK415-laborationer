@@ -98,8 +98,8 @@ main {
     width: 100%;
     background-color: #EEFFC9;
 }
-article, section, aside, nav.labs, nav.courses {
-    width: 100%;
+article, section, aside, nav.courses {
+    padding: 0 0.5em;
     margin-bottom: 0.5em;
 }
 video, table {
@@ -131,7 +131,7 @@ nav.mainNav a {
     font-variant: small-caps;
     padding: 0.4em 0.4em 0.4em 2em;
     width: 100%;
-    height: 1.5em;
+    height: 1.75em;
     text-decoration: none;
 }
 nav.courses ul {
@@ -142,8 +142,7 @@ nav.courses li {
 }
 nav.labs {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 0.5em;
 }
 nav.labs li:not(:last-child):after {
     content: ",";
@@ -198,9 +197,9 @@ a:hover, a:focus {
     color: #BA8BCA;
 }
 fieldset {
-        border: 0.2em solid #5F6E40;
-        border-radius: 0.5em;
-        padding: 0.5em 2em 0.5em 0.5em;
+    border: 0.2em solid #5F6E40;
+    border-radius: 0.5em;
+    padding: 0.5em 2em 0.5em 0.5em;
 }
 fieldset, button {
     margin-top: 1em;
@@ -228,7 +227,7 @@ legend {
 textarea {
     height: 10em;
 }
-input:not([type=checkbox]):not[type=video], textarea, select {
+input:not([type=checkbox]):not([accept="video/"]), textarea, select {
     display: block;
     width: 100%;
     background-color: #B6CA8B;
@@ -350,8 +349,9 @@ input:focus, textarea:focus, select:focus {
     }
     video, table {
         width: 100%;
+        box-shadow: 4px 4px 7px #333333;
     }
-    article, section, aside, nav.labs, nav.courses {
+    article, section, aside, nav.courses {
         float: right;
         width: 66%;
         margin-left: 2%;
@@ -378,8 +378,6 @@ input:focus, textarea:focus, select:focus {
     }
     nav.labs {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
     footer {
         float: right;
