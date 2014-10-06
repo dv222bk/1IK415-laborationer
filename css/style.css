@@ -109,7 +109,7 @@ nav.mainNav {
     width: 100%;
     height: 100%;
     font-family: "Times New Roman", Times, serif;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 nav.mainNav li{
     overflow: hidden;
@@ -186,7 +186,7 @@ dd {
     margin-bottom: 1em;
 }
 img, li > dl {
-    margin: 1em;
+    margin: 0.5em;
 }
 a {
     color: #5F6E40;
@@ -228,7 +228,7 @@ legend {
 textarea {
     height: 10em;
 }
-input:not([type=checkbox]), textarea, select {
+input:not([type=checkbox]):not[type=video], textarea, select {
     display: block;
     width: 100%;
     background-color: #B6CA8B;
@@ -242,6 +242,47 @@ input[type=checkbox] + lable:before {
     white-space: pre;
 }
 input:focus, textarea:focus, select:focus {
+    background-color: #EEFFC9;
+}
+.question:before {
+    content: "?> ";
+}
+.bloggpost {
+    padding-top: 0.5em;
+    border-top: 0.1em solid black;
+}
+.bloggpost h3 {
+    background-image: url(pics/fairy.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.authorInfo {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    border-top: 0.1em dotted black;
+}
+.tagline {
+    font-size: 1.2em;
+    text-align: right;
+    margin-right: 0.25em;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+    margin-left: 0;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+[rowspan] {
+    text-align: center;
+    vertical-align: middle;
     background-color: #EEFFC9;
 }
 .start, .laborationer, .presentation, .kontakt {
@@ -356,48 +397,10 @@ input:focus, textarea:focus, select:focus {
     fieldset, button, input, textarea, select, legend {
         box-shadow: 2px 2px 2px #333333;
     }
-    .question:before {
-        content: "?> ";
-    }
-    .bloggpost {
-        padding-top: 0.5em;
-        border-top: 0.1em solid black;
-    }
-    .bloggpost h3 {
-        background-image: url(pics/fairy.png);
-        background-repeat: no-repeat;
-        padding-left: 25px;
-    }
-    .authorInfo {
-        text-align: right;
-        font-style: italic;
-        font-size: 0.8em;
-        margin-top: 0.5em;
-        border-top: 0.1em dotted black;
-    }
-    .tagline {
-        font-size: 1.2em;
-        text-align: right;
-        margin-right: 0.25em;
-    }
-    .right {
-        float: right;
-    }
-    .left {
-        float: left;
-        margin-left: 0;
-    }
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    img, li > dl {
+        margin: 1em;
     }
     .shadow {
         box-shadow: 4px 4px 7px #333333;
-    }
-    [rowspan] {
-        text-align: center;
-        vertical-align: middle;
-        background-color: #EEFFC9;
     }
 }
