@@ -66,7 +66,7 @@ table {
 body {
     background-color: #EEFFC9;
     width: 100%;
-    line-height: 1.3em;
+    line-height: 1.4em;
     font-family: Verdana, Geneva, sans-serif;
 }
 h1, h2, h3 {
@@ -91,8 +91,9 @@ h3 {
 }
 header {
     width: 100%;
-    padding-top: 7.5em;
-    background: #B6CA8B url(pics/logotype_small.png) top center no-repeat;
+    padding-top: 20%;
+    background: #B6CA8B url(pics/logotype.png) top center no-repeat;
+    background-size: 100%;
 }
 main {
     width: 100%;
