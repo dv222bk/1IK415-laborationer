@@ -16,9 +16,9 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, Header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, main {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -28,7 +28,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, Header, hgroup, main, menu, nav, section {
 	display: block;
 }
 body {
@@ -54,7 +54,7 @@ table {
 
 /*
     Background: #6D3D7D and #BA8BCA
-    Background Header, Footer, Menu: #B6CA8B
+    Background #pageHeader, Footer, Menu: #B6CA8B
     Background Main, Menu Hover Text: #EEFFC9
     Hover Background Menu, Link: #5F6E40 
     Link Visited: #6D3D7D
@@ -89,17 +89,11 @@ h3 {
     font-weight: bolder;
     margin-bottom: 0.5em;
 }
-header {
-    width: 100%;
-    padding-top: 20%;
-    background: #B6CA8B url(pics/logotype.png) top center no-repeat;
-    background-size: 100%;
-}
 main {
     width: 100%;
     background-color: #EEFFC9;
 }
-article, section, aside, nav.courses {
+article, aside, section, nav.courses, #bloggHeader {
     padding: 0 0.5em;
     margin-bottom: 0.5em;
 }
@@ -150,14 +144,6 @@ nav.labs li:not(:last-child):after {
 }
 nav.labs li {
     display: inline;
-}
-footer {
-    background-color: #B6CA8B;
-    width: 100%;
-    padding: 0.5em 0;
-}
-footer p {
-    margin: 0em 0 0.5em 0.5em;
 }
 table, td, th {
     border: 0.1em solid black;
@@ -237,12 +223,22 @@ input:not([type=checkbox]):not([accept="video/"]), textarea, select {
     margin-bottom: 1em;
     padding: 0.4em;
 }
-input[type=checkbox] + lable:before {
-    content: "\a";
-    white-space: pre;
-}
 input:focus, textarea:focus, select:focus {
     background-color: #EEFFC9;
+}
+#pageHeader {
+    width: 100%;
+    padding-top: 20%;
+    background: #B6CA8B url(pics/logotype.png) top center no-repeat;
+    background-size: 100%;
+}
+#mainFooter {
+    background-color: #B6CA8B;
+    width: 100%;
+    padding: 0.5em 0;
+}
+#mainFooter p {
+    margin: 0em 0 0.5em 0.5em;
 }
 .question:before {
     content: "?> ";
@@ -251,12 +247,12 @@ input:focus, textarea:focus, select:focus {
     padding-top: 0.5em;
     border-top: 0.1em solid black;
 }
-.bloggpost h3 {
+.bloggpostHeader {
     background-image: url(pics/fairy.png);
     background-repeat: no-repeat;
     padding-left: 25px;
 }
-.authorInfo {
+.bloggFooter {
     text-align: right;
     font-style: italic;
     font-size: 0.8em;
@@ -279,11 +275,6 @@ input:focus, textarea:focus, select:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-[rowspan] {
-    text-align: center;
-    vertical-align: middle;
-    background-color: #EEFFC9;
 }
 .start, .laborationer, .presentation, .kontakt {
     background-color: #B6CA8B;
@@ -319,8 +310,13 @@ input:focus, textarea:focus, select:focus {
 .kontakt:hover a {
     background-position: 5px -283px;
 }
+[rowspan] {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #EEFFC9;
+}
 
-@media all and (min-width: 481px) {
+@media all and (min-width: 48em) {
     body {
         background-color: #6D3D7D; /* Fallback */
         background: repeating-linear-gradient( /* http://css-tricks.com/stripes-css/ */
@@ -335,15 +331,14 @@ input:focus, textarea:focus, select:focus {
         margin-left: auto;
         margin-right: auto;
     }
-    header, main, footer {
+    main, #pageHeader, #mainFooter {
         box-shadow: 5px 5px 10px #333333;
     }
-    header {
+    #pageHeader {
         float: left;
         clear: both;
         margin: 0 auto;
         padding-top: 7.5em;
-        background: #B6CA8B url(pics/logotype.png) top left no-repeat;
     }
     main {
         float: right;
@@ -352,7 +347,7 @@ input:focus, textarea:focus, select:focus {
         width: 100%;
         box-shadow: 4px 4px 7px #333333;
     }
-    article, section, aside, nav.courses {
+    article, aside, section, nav.courses, #bloggHeader {
         float: right;
         width: 66%;
         margin-left: 2%;
@@ -380,13 +375,6 @@ input:focus, textarea:focus, select:focus {
     nav.labs {
         width: 100%;
     }
-    footer {
-        float: right;
-        padding: 0;
-    }
-    footer p {
-        margin-top: 0.25em;
-    }
     ul {
         margin-bottom: 1em;
     }
@@ -398,6 +386,13 @@ input:focus, textarea:focus, select:focus {
     }
     img, li > dl {
         margin: 1em;
+    }
+    #mainFooter {
+        float: right;
+        padding: 0;
+    }
+    #mainFooter p {
+        margin-top: 0.25em;
     }
     .shadow {
         box-shadow: 4px 4px 7px #333333;

@@ -9,16 +9,18 @@
         <title>Startsida - Daniel Vedins Webbtekniska Sajt</title>
     </head>
     <body>
-        <header>
+        <header id="pageHeader">
             <h1>Daniel Vedins webbtekniska sajt</h1>
             <p class="tagline">Välkommen hit!</p>
         </header>
         <main>
-            <section>
+            <header id="bloggHeader">
                 <h2>Kursblogg</h2>
-            </section>
+            </header>
             <article id="bloggpost-5" class="bloggpost">
-                <h3>Copycat uppgift</h3>
+                <header class="bloggpostHeader">
+                    <h3>Copycat uppgift</h3>
+                </header>
                 <a title="Klicka för att se en stor version av bilden" href="pics/IE7_hela.png"><img class="center shadow" src="pics/IE7_hela_small.png" alt="Bild på webbplatsen jag skulle efterlikna på copycat uppgiften" /></a>
                 <p>Jag har precis gjort en uppgift som kallades "copycat". I denna
                 uppgiften skulle jag efterlikna en webbplats enbart med hjälp av 
@@ -27,10 +29,14 @@
                 den nedre bilden är mitt resulat. En länk till webbplatsen jag
                 skapade kan finnas i <a title="Laborationsportalen: Labb 3 WebbTek" href="pages/laborationer.html#webbtek-lab3">laborationsportalen</a></p>
                 <a title="Klicka för att se en stor version av bilden" href="pics/copycat.png"><img class="center shadow" src="pics/copycat_small.png" alt="Bild på mitt resultat av copycat upgiften" /></a>
-                <p class="authorInfo">Skrivet av Daniel Vedin, 2014-09-30</p>
+                <footer class="bloggFooter">
+                    <p class="authorInfo">Skrivet av Daniel Vedin, 2014-09-30</p>
+                </footer>
             </article>
             <article id="bloggpost-4" class="bloggpost">
-                <h3>Lorem Ipsum!</h3>
+                <header class="bloggpostHeader">
+                    <h3>Lorem Ipsum!</h3>
+                </header>
                 <img class="right shadow" src="pics/SeriousFaceSmall.jpg" alt="Bild på Daniel Vedin när han hade mycket skägg" />
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
@@ -76,29 +82,43 @@
                 claram, anteposuerit litterarum formas humanitatis per seacula 
                 quarta decima et quinta decima. Eodem modo typi, qui nunc nobis 
                 videntur parum clari, fiant sollemnes in futurum.</p>
-                <p class="authorInfo">Skrivet av Daniel Vedin, 2014-09-24</p>
+                <footer class="bloggFooter">
+                    <p>Skrivet av Daniel Vedin, 2014-09-24</p>
+                </footer>
             </article>
             <article id="bloggpost-3" class="bloggpost">
-                <h3>Cool trailer!</h3>
+                <header class="bloggpostHeader">
+                    <h3>Cool trailer!</h3>
+                </header>
                 <p>Här är en cool trailer från <a title="Big Buck Bunny Website" href="http://www.bigbuckbunny.org">Big Buck Bunny</a></p>
                 <video controls>
                     <source src="video/trailer_400p.ogg" type="video/ogg">
                     Your browser does not support HTML5 video.
                 </video>
-                <p class="authorInfo">Skrivet av Daniel Vedin, 2014-09-06</p>
+                <footer class="bloggFooter">
+                    <p>Skrivet av Daniel Vedin, 2014-09-06</p>
+                </footer>
             </article>
             <article id="bloggpost-2" class="bloggpost">
-                <h3>Vector bild</h3>
+                <header class="bloggpostHeader">
+                    <h3>Vector bild</h3>
+                </header>
                 <p>Här är en cool vectorbild jag gjort!</p>
                 <p><img src="pics/vectorbild.svg" alt="Cool vectorbild" /></p>
-                <p class="authorInfo">Skrivet av Daniel Vedin, 2014-09-06</p>
+                <footer class="bloggFooter">
+                    <p>Skrivet av Daniel Vedin, 2014-09-06</p>
+                </footer>
             </article>
             <article id="bloggpost-1" class="bloggpost">
-                <h3>Hejsan världen!</h3>
+                <header class="bloggpostHeader">
+                    <h3>Hejsan världen!</h3>
+                </header>
                 <p>På denna blogg kommer jag att skriva några rader om de 
                 laborationer jag gör och också publicera material som jag
                 producerar.</p>
-                <p class="authorInfo">Skrivet av Daniel Vedin, 2014-09-04</p>
+                <footer class="bloggFooter">
+                    <p>Skrivet av Daniel Vedin, 2014-09-04</p>
+                </footer>
             </article>
             <nav class="mainNav">
                 <ul>
@@ -109,7 +129,7 @@
                 </ul>
             </nav>
         </main>
-        <footer>
+        <footer id="mainFooter">
             <p>Ansvarig för materialet på denna sida är Daniel Vedin</p>
         </footer>
     </body>

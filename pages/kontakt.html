@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="../css/style_print.css" />
         <title>Kontakt - Daniel Vedins Webbtekniska Sajt</title>
     <body>
-        <header>
+        <header id="pageHeader">
             <h1>Kontakt</h1>
             <p class="tagline">Kontakta mig när du vill!</p>
         </header>
@@ -19,21 +19,22 @@
                 <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
                     <fieldset>
                         <legend>Meddelande</legend>
-                        <lable for="arende">Ärendetyp:</lable>
-                        <select name="arende">
-                            <option value="fraga">Fråga</option>
-                            <option value="klagomal">Klagomål</option>
-                            <option value="ovrigt">Övrigt</option>
-                        </select>
-                        <lable for="rubrik">Rubrik:</lable><input name="rubrik" type="text" />
-                        <lable for="msg">Fråga:</lable><textarea name="msg"></textarea>
+                        <label for="arende">Ärendetyp:
+                            <select id="arende" name="arende">
+                                <option value="fraga">Fråga</option>
+                                <option value="klagomal">Klagomål</option>
+                                <option value="ovrigt">Övrigt</option>
+                            </select>
+                        </label>
+                        <label for="rubrik">Rubrik:<input id="rubrik" name="rubrik" type="text" /></label>
+                        <label for="msg">Fråga:<textarea id="msg" name="msg"></textarea></label>
                     </fieldset>
                     <fieldset>
                         <legend>Information om dig</legend>
-                        <lable for="mejl">Email:</lable><input name="mejl" type="email" />
-                        <lable for="tfn">Telefon:</lable><input name="tfn" type="tel" />
-                        <lable for="contactmejl">Kontakta mig via mail</lable><input name="contactmejl" type="checkbox" value="mejl" />
-                        <lable for="contacttfn">Kontakta mig via telefon</lable><input name="contacttfn" type="checkbox" value="tfn" />
+                        <label for="mejl">Email:<input id="mejl" name="mejl" type="email" /></label>
+                        <label for="tfn">Telefon:<input id="tfn" name="tfn" type="tel" /></label>
+                        <p><label for="contactmejl">Kontakta mig via mail<input id="contactmejl" name="contactmejl" type="checkbox" value="mejl" /></label></p>
+                        <p><label for="contacttfn">Kontakta mig via telefon<input id="contacttfn" name="contacttfn" type="checkbox" value="tfn" /></label></p>
                     </fieldset>
                     <button type="submit">Skicka frågan</button>
                 </form>
@@ -47,7 +48,7 @@
                 </ul>
             </nav>
         </main>
-        <footer>
+        <footer id="mainFooter">
             <p>Ansvarig för materialet på denna sida är Daniel Vedin</p>
         </footer>
     </body>
