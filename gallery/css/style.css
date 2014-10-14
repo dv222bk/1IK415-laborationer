@@ -9,6 +9,24 @@ a {
     color: #000000;
     text-decoration: none;
     text-align: center;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+}
+a:nth-child(2n) {
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+}
+a:nth-child(3n) {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+}
+a:nth-child(4n) {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+}
+a:nth-child(5n) {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
 }
 a:after {
   content: attr(title);
