@@ -1,7 +1,22 @@
 body {
     background-color: #A59178;
 }
-a {    
+main {
+    margin-left: 5%;
+}
+aside {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1%;
+    width: 20%;
+}
+#images {
+    display: inline-block;
+    width: 75%;
+    padding-right: 2%;
+    border-right: 1px solid #666666;
+}
+#images a {    
     background-color: #FFFFFF;
     display: inline-block;
     width: 200px;
@@ -20,34 +35,34 @@ a {
     -o-transition-duration: 0.5s;
     z-index: 0;
 }
-a:nth-child(2n) {
+#images a:nth-child(2n) {
     transform: rotate(12deg);
     -webkit-transform: rotate(12deg);
     -moz-transform: rotate(12deg);
     -o-transform: rotate(12deg);
 }
-a:nth-child(3n) {
+#images a:nth-child(3n) {
     transform: rotate(-10deg);
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
 }
-a:nth-child(4n) {
+#images a:nth-child(4n) {
     transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
 }
-a:nth-child(5n) {
+#images a:nth-child(5n) {
     transform: rotate(10deg);
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
     -o-transform: rotate(10deg);
 }
-a:after {
+#images a:after {
   content: attr(title);
 }
-a:hover, a:focus {
+#images a:hover, #images a:focus {
     transform: scale(1.75);
     -webkit-transform: scale(1.75);
     -moz-transform: scale(1.75);
@@ -56,25 +71,9 @@ a:hover, a:focus {
     z-index: 5;
     box-shadow: 14px 14px 28px #333333;
 }
-a:focus { /* to prevent a focused image to go on top of a hovered image */
+#images a:focus { /* to prevent a focused image to go on top of a hovered image */
     z-index: 4;
 }
-img {
+#images img {
     width: 100%;
-}
-#container {
-    margin-top: 75px;
-}
-#images {
-    display: inline-block;
-    width: 70%;
-    margin-left: 5%;
-    padding-right: 5%;
-    border-right: 1px solid #666666;
-}
-#side {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 1%;
-    width: 15%;
 }
