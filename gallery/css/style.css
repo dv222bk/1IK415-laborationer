@@ -9,6 +9,7 @@ a {
     color: #000000;
     text-decoration: none;
     text-align: center;
+    box-shadow: 7px 7px 7px #333333;
     -webkit-transform: rotate(5deg);
     -moz-transform: rotate(5deg);
 }
@@ -36,6 +37,7 @@ a:hover {
     -moz-transform: scale(1.75);
     position: relative;
     z-index: 2;
+    box-shadow: 14px 14px 28px #333333;
 }
 img {
     width: 100%;
