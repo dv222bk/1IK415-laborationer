@@ -235,9 +235,9 @@ input:focus, textarea:focus, select:focus {
 #mainFooter {
     background-color: #B6CA8B;
     width: 100%;
-    padding: 0.5em 0;
+    padding: 0.5em;
 }
-#mainFooter p {
+#mainFooter p, #mainFooter .vcard {
     margin: 0em 0 0.5em 0.5em;
 }
 .question:before {
