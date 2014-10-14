@@ -1,0 +1,26 @@
+body {
+    background-color: #A59178;
+}
+a {    
+    display: inline-block;
+    width: 200px;
+}
+img {
+    width: 100%;
+}
+#container {
+    margin-top: 75px;
+}
+#images {
+    display: inline-block;
+    width: 60%;
+    margin-left: 10%;
+    padding-right: 5%;
+    border-right: 1px solid #666666;
+}
+#side {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1%;
+    width: 20%;
+}
